@@ -3031,3 +3031,11 @@ input[type=range]::-moz-focus-outer {
     letter-spacing: -0.01em;
   }
 }
+
+
+
+.about-section {
+  background-color: #432269;
+  background-image: linear-gradient(160deg, #432269 58%, #1e053d 87%);
+
+}
