@@ -13,7 +13,7 @@ const Vision = () => {
     <>
       <div className="vision-container">
         <div className="max-w-7xl mx-auto ">
-          <div className="flex flex-wrap bg-white px-4 md:px-0 md:py-16 py-6 rounded-lg justify-between items-center">
+          <div className="flex flex-wrap bg-white px-4 md:px-0 md:py-16 md:pb-2 py-6 rounded-lg justify-between items-center">
             <div className="benefit-content md:basis-[45%] basis-[100%]">
               <h2
                 data-aos="fade-up"

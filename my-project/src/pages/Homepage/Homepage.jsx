@@ -6,6 +6,7 @@ import MarqueeDemo from "./Components/ReviewMarquee";
 import About from "./Components/About";
 import HeroSection from "./Testing";
 import Vision from "./Components/Vision";
+import ParentCompany from "./Components/ParentCompany";
 
 const Homepage = () => {
   return (
@@ -15,6 +16,7 @@ const Homepage = () => {
       <MarqueeDemo />
       <About />
       <Vision />
+      <ParentCompany />
       {/* <HeroSection /> */}
     </>
   );
