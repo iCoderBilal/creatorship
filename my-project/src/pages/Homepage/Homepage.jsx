@@ -5,6 +5,7 @@ import "../../App.css";
 import MarqueeDemo from "./Components/ReviewMarquee";
 import About from "./Components/About";
 import HeroSection from "./Testing";
+import Vision from "./Components/Vision";
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
       <Hero />
       <MarqueeDemo />
       <About />
+      <Vision />
       {/* <HeroSection /> */}
     </>
   );

@@ -46,10 +46,10 @@ const About = () => {
                     <img src={creator} className="rounded-lg" />
                   </div>
                   <div className="flex-1 space-y-1">
-                    <h2 className="text-gray-200 dark:text-white font-semibold text-2xl font-Montserrat">
+                    <h2 className="text-gray-200 dark:text-white font-semibold md:text-2xl text-xl font-Montserrat">
                       Creator
                     </h2>
-                    <p className="text-gray-300 dark:text-gray-300 text-md font-Montserrat">
+                    <p className="text-gray-300 dark:text-gray-300 md:text-[16px] text-[13px] font-Montserrat">
                       Anyone with social influence can partner with a business,
                       converting their social impact into an asset.
                     </p>
@@ -61,10 +61,10 @@ const About = () => {
                     <img src={aboutBusiness} className="rounded-lg" />
                   </div>
                   <div className="flex-1 space-y-1">
-                    <h2 className="text-gray-200 dark:text-white font-semibold text-2xl font-Montserrat">
+                    <h2 className="text-gray-200 dark:text-white font-semibold md:text-2xl text-xl font-Montserrat">
                       High Quality
                     </h2>
-                    <p className="text-gray-300 dark:text-gray-300 text-md font-Montserrat">
+                    <p className="text-gray-300 dark:text-gray-300 md:text-[16px] text-[13px] font-Montserrat">
                       Every business, small or big, needs market reach to grow
                       and generate business.
                     </p>
