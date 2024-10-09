@@ -1,9 +1,9 @@
 import React from "react";
 
-const Features = () => {
+const Features = ({ featureLink }) => {
   return (
     <>
-      <section>
+      <section ref={featureLink}>
         <div className="cqx6l cyhno cdcfy mt-24">
           {/* Background */}
           <div

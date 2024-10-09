@@ -24,7 +24,7 @@ const FooterBlock = () => {
           <div className="flex text-center sm:text-left sm:min-w-max">
             <p className="font-Montserrat text-gray-300">
               {" "}
-              © 2023 UnifyUI. All right reserved{" "}
+              © 2024 CREATORSHIP. All right reserved{" "}
             </p>
           </div>
           <div className="flex justify-center sm:justify-end w-full gap-3">

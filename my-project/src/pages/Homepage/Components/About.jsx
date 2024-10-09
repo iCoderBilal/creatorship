@@ -3,9 +3,9 @@ import aboutImg from "../../../assets/about-img.jpg";
 import creator from "../../../assets/creator.jpg";
 import aboutBusiness from "../../../assets/aboutBusiness.jpg";
 
-const About = () => {
+const About = ({ aboutlink }) => {
   return (
-    <section data-aos-id-2="">
+    <section data-aos-id-2="" ref={aboutlink}>
       <div className="cqx6l cyhno cdcfy">
         {/* Background */}
         <div

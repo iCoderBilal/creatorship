@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import "../../App.css";
@@ -12,16 +12,23 @@ import Contact from "./Components/Contact";
 import FooterBlock from "./Components/Footer";
 
 const Homepage = () => {
+  const aboutlink = useRef(null);
+  const featureLink = useRef(null);
+  const contactLink = useRef(null);
   return (
     <>
-      <Header />
+      <Header
+        aboutlink={aboutlink}
+        featureLink={featureLink}
+        contactLink={contactLink}
+      />
       <Hero />
       <MarqueeDemo />
-      <About />
+      <About aboutlink={aboutlink} />
       <Vision />
       <ParentCompany />
-      <Features />
-      <Contact />
+      <Features featureLink={featureLink} />
+      <Contact contactLink={contactLink} />
       <FooterBlock />
 
       {/* <HeroSection /> */}

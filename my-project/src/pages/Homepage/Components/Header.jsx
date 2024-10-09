@@ -1,7 +1,10 @@
 import React from "react";
 import webLogo from "../../../assets/web-logo.png";
 
-const Header = () => {
+const Header = ({ aboutlink, featureLink, contactLink }) => {
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behaviour: "smooth", block: "start" });
+  };
   return (
     <header className="cx5bd cjkjb csam5">
       <div className="cl9ye cc8xx cdcfy chlof">
@@ -18,27 +21,27 @@ const Header = () => {
           <nav className="c29n1 c7e8i header-nav">
             {/* Desktop sign in links */}
             <ul className="c38qt c17z2 cjsl1 c29n1 c7e8i">
-              <li className="cy5mp">
-                <a
-                  className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat"
-                  href="about.html"
-                >
+              <li
+                className="cy5mp cursor-pointer"
+                onClick={() => scrollToSection(aboutlink)}
+              >
+                <a className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat">
                   About Us
                 </a>
               </li>
-              <li className="cy5mp">
-                <a
-                  className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat"
-                  href="features.html"
-                >
+              <li
+                className="cy5mp"
+                onClick={() => scrollToSection(featureLink)}
+              >
+                <a className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat">
                   Features
                 </a>
               </li>
-              <li className="cy5mp">
-                <a
-                  className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat"
-                  href="contact.html"
-                >
+              <li
+                className="cy5mp"
+                onClick={() => scrollToSection(contactLink)}
+              >
+                <a className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat">
                   Contact
                 </a>
               </li>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
-const Contact = () => {
+const Contact = ({ contactLink }) => {
   const notify = () => toast.success("Successfully toasted!");
   const [userData, setUserData] = useState({
     firstName: "",
@@ -62,7 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-form">
+    <section className="contact-form" ref={contactLink}>
       <Toaster />
       {/* Container */}
       <div className="mx-auto max-w-4xl px-5 py-16 text-center md:px-10 md:py-20">
