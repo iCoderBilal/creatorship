@@ -3,8 +3,20 @@ import pvimg from "../../../assets/pvImg.png";
 import partnerImg from "../../../assets/partner.png";
 import creatorImg from "../../../assets/creator.png";
 import professionalImg from "../../../assets/professionals.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 const ParentCompany = () => {
+  const sliderSettings = {
+    dots: true, // Show dots for navigation
+    infinite: true, // Infinite scrolling
+    speed: 500, // Transition speed
+    slidesToShow: 1, // Show one slide at a time
+    slidesToScroll: 1, // Scroll one slide at a time
+  };
+
+  const isMobile = window.innerWidth < 768;
   return (
     <>
       <section className="c2wd7 ca769 parent" data-aos-id-3="">
@@ -24,7 +36,7 @@ const ParentCompany = () => {
                   {/* Copy */}
                   <h2
                     data-aos="fade-up"
-                    className="text-black text-left text-[9vw] leading-[9.5vw] md:text-[3.5vw] md:leading-[4vw] font-Montserrat font-bold mb-2"
+                    className="text-black md:text-left text-center text-[9vw] leading-[9.5vw] md:text-[3.5vw] md:leading-[4vw] font-Montserrat font-bold mb-2"
                   >
                     Parent Company
                   </h2>
@@ -82,44 +94,88 @@ const ParentCompany = () => {
                       data-aos-anchor="[data-aos-id-3]"
                     />
 
-                    <div className="parent-stats flex justify-evenly mt-4">
-                      <div className="parent-stat">
-                        <img
-                          src={partnerImg}
-                          className="md:w-[60px] w-[50px] mx-auto"
-                        />
-                        <h2 className="text-center md:text-[26px] text-[22px] font-bold font-Montserrat text-[#8649D0]">
-                          12+
-                        </h2>
-                        <p className="text-center font-Montserrat font-medium text-[14px] md:text-[16px]">
-                          Partnerships made
-                        </p>
-                      </div>
-                      <div className="parent-stat">
-                        <img
-                          src={creatorImg}
-                          className="md:w-[60px] w-[50px] mx-auto mb-0"
-                        />
-                        <h2 className="text-center md:text-[26px] text-[22px] font-bold font-Montserrat text-[#8649D0]">
-                          30+
-                        </h2>
-                        <p className="text-center font-Montserrat font-medium text-[14px] md:text-[16px]">
-                          Creators & Businesses
-                        </p>
-                      </div>
-                      <div className="parent-stat">
-                        <img
-                          src={professionalImg}
-                          className="md:w-[45px] w-[40px] mx-auto mb-2 mt-2"
-                        />
-                        <h2 className="text-center md:text-[26px] text-[22px] font-bold font-Montserrat text-[#8649D0]">
-                          500+
-                        </h2>
-                        <p className="text-center font-Montserrat font-medium text-[14px] md:text-[16px]">
-                          Professionals
-                        </p>
-                      </div>
+                    <div className="parent-stats md:gap-0 gap-6 mt-4">
+                      {isMobile ? (
+                        <Slider {...sliderSettings}>
+                          <div className="parent-stat md:w-auto w-[280px]">
+                            <img
+                              src={partnerImg}
+                              className="md:w-[60px] w-[70px] mx-auto"
+                            />
+                            <h2 className="text-center md:text-[26px] text-[28px] font-bold font-Montserrat text-[#8649D0]">
+                              12+
+                            </h2>
+                            <p className="text-center font-Montserrat font-medium text-[18px] md:text-[16px]">
+                              Partnerships made
+                            </p>
+                          </div>
+                          <div className="parent-stat md:w-auto w-[280px]">
+                            <img
+                              src={creatorImg}
+                              className="md:w-[60px] w-[70px] mx-auto mb-0"
+                            />
+                            <h2 className="text-center md:text-[26px] text-[28px] font-bold font-Montserrat text-[#8649D0]">
+                              30+
+                            </h2>
+                            <p className="text-center font-Montserrat font-medium text-[18px] md:text-[16px]">
+                              Creators & Businesses
+                            </p>
+                          </div>
+                          <div className="parent-stat md:w-auto w-[280px]">
+                            <img
+                              src={professionalImg}
+                              className="md:w-[45px] w-[60px] mx-auto mb-2 mt-2"
+                            />
+                            <h2 className="text-center md:text-[26px] text-[28px] font-bold font-Montserrat text-[#8649D0]">
+                              500+
+                            </h2>
+                            <p className="text-center font-Montserrat font-medium text-[18px] md:text-[16px]">
+                              Professionals
+                            </p>
+                          </div>
+                        </Slider>
+                      ) : (
+                        <div className="flex justify-evenly flex-wrap">
+                          <div className="parent-stat md:w-auto w-[280px]">
+                            <img
+                              src={partnerImg}
+                              className="md:w-[60px] w-[70px] mx-auto"
+                            />
+                            <h2 className="text-center md:text-[26px] text-[28px] font-bold font-Montserrat text-[#8649D0]">
+                              12+
+                            </h2>
+                            <p className="text-center font-Montserrat font-medium text-[18px] md:text-[16px]">
+                              Partnerships made
+                            </p>
+                          </div>
+                          <div className="parent-stat md:w-auto w-[280px]">
+                            <img
+                              src={creatorImg}
+                              className="md:w-[60px] w-[70px] mx-auto mb-0"
+                            />
+                            <h2 className="text-center md:text-[26px] text-[28px] font-bold font-Montserrat text-[#8649D0]">
+                              30+
+                            </h2>
+                            <p className="text-center font-Montserrat font-medium text-[18px] md:text-[16px]">
+                              Creators & Businesses
+                            </p>
+                          </div>
+                          <div className="parent-stat md:w-auto w-[280px]">
+                            <img
+                              src={professionalImg}
+                              className="md:w-[45px] w-[60px] mx-auto mb-2 mt-2"
+                            />
+                            <h2 className="text-center md:text-[26px] text-[28px] font-bold font-Montserrat text-[#8649D0]">
+                              500+
+                            </h2>
+                            <p className="text-center font-Montserrat font-medium text-[18px] md:text-[16px]">
+                              Professionals
+                            </p>
+                          </div>
+                        </div>
+                      )}
                     </div>
+
                     {/* <div>
                       <a
                         className="font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb"

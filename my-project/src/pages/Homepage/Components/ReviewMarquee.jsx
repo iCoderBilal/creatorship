@@ -21,15 +21,36 @@ const MarqueeDemo = () => {
       <div className="bg-white relative flex min-h-[100px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-16 pt-0 md:py-16 md:pt-0">
         <Marquee pauseOnHover className="[--duration:10s]">
           <div className="flex items-center">
-            <img src={swissLogo} className="w-[150px] h-[70px] mx-[30px]" />
-            <img src={systemLogo} className="w-[120px] h-[120px] mx-[30px]" />
-            <img src={ovaLogo} className="w-[220px] h-[40px] mx-[30px]" />
-            <img src={socialLogo} className="w-[120px] h-[120px] mx-[30px]" />
-            <img src={goodLogo} className="w-[280px] mx-[30px]" />
+            <img
+              src={swissLogo}
+              className="md:w-[130px] w-[80px] md:mx-[30px] mx-[15px]"
+            />
+            <img
+              src={systemLogo}
+              className="md:w-[120px] w-[70px] md:mx-[30px] mx-[15px]"
+            />
+            <img
+              src={ovaLogo}
+              className="md:w-[220px] w-[170px] md:mx-[30px] mx-[15px]"
+            />
+            <img
+              src={socialLogo}
+              className="md:w-[120px] w-[70px] md:mx-[30px] mx-[15px]"
+            />
+            <img
+              src={goodLogo}
+              className="md:w-[240px] w-[180px] md:mx-[30px] mx-[15px]"
+            />
 
-            <img src={nothingLogo} className="w-[90px] h-[90px] mx-[30px]" />
+            <img
+              src={nothingLogo}
+              className="md:w-[80px] w-[40px] md:mx-[30px] mx-[15px]"
+            />
 
-            <img src={factureLogo} className="w-[120px] mx-[30px]" />
+            <img
+              src={factureLogo}
+              className="md:w-[110px] w-[60px] md:mx-[30px] mx-[15px]"
+            />
           </div>
         </Marquee>
 
