@@ -1,5 +1,5 @@
 import React from "react";
-import pvimg from "../../../assets/pvImg.webp";
+import pvimg from "../../../assets/pvImg.png";
 import partnerImg from "../../../assets/partner.png";
 import creatorImg from "../../../assets/creator.png";
 import professionalImg from "../../../assets/professionals.png";
@@ -7,7 +7,7 @@ import professionalImg from "../../../assets/professionals.png";
 const ParentCompany = () => {
   return (
     <>
-      <section className="c2wd7 ca769" data-aos-id-3="">
+      <section className="c2wd7 ca769 parent" data-aos-id-3="">
         <div className="cqx6l cyhno cdcfy">
           {/* Bg */}
           <div
@@ -34,13 +34,25 @@ const ParentCompany = () => {
                     data-aos-anchor="[data-aos-id-3]"
                     data-aos-delay="200"
                   >
-                    Persist Ventures, the parent company of Creatorship, helps
-                    businesses grow and succeed. As a full-service venture
-                    accelerator, we offer brand design, strategy consulting, and
-                    investor connections to help companies reach their next
-                    level. Our team has expertise across many sectors, ensuring
-                    every business gets the support it needs.
+                    Persist Ventures, the parent company of Creatorship, has
+                    built a remarkable track record of success by partnering
+                    with businesses to help them scale and thrive. As a
+                    full-service venture accelerator, Persist Ventures provides
+                    everything from brand design and strategic consulting to
+                    introductions to investors, helping companies achieve their
+                    next level of growth. Our diverse team offers expertise
+                    across multiple sectors, ensuring that no business is left
+                    without the support it needs.
                   </p>
+
+                  <div>
+                    <a
+                      className="bg-[#8649D0] hover:bg-[#643A8F] text-white font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb"
+                      href="support.html"
+                    >
+                      Get Brand Deals
+                    </a>
+                  </div>
 
                   {/* Button */}
                   <div
@@ -60,13 +72,11 @@ const ParentCompany = () => {
                 </div>
 
                 {/* Image */}
-                <div className="cwihz ctp1d cogs9 c60si cjkjb c8r7v">
+                <div className="cwihz ctp1d cogs9 c60si cjkjb c8r7v md:mr-[70px]">
                   <div className="cyhno ctp3x cy4vq">
                     <img
                       src={pvimg}
-                      className="cwihz"
-                      width="496"
-                      height="496"
+                      className="cwihz mx-auto mb-12 md:w-[340px] w-[200px]"
                       alt="Features 03"
                       data-aos="fade-up"
                       data-aos-anchor="[data-aos-id-3]"
@@ -74,35 +84,38 @@ const ParentCompany = () => {
 
                     <div className="parent-stats flex justify-evenly mt-4">
                       <div className="parent-stat">
-                        <img src={partnerImg} className="w-[90px] mx-auto" />
-                        <h2 className="text-center text-[26px] font-bold font-Montserrat">
+                        <img
+                          src={partnerImg}
+                          className="md:w-[60px] w-[50px] mx-auto"
+                        />
+                        <h2 className="text-center md:text-[26px] text-[22px] font-bold font-Montserrat text-[#8649D0]">
                           12+
                         </h2>
-                        <p className="text-center font-Montserrat">
+                        <p className="text-center font-Montserrat font-medium text-[14px] md:text-[16px]">
                           Partnerships made
                         </p>
                       </div>
                       <div className="parent-stat">
                         <img
                           src={creatorImg}
-                          className="w-[80px] mx-auto mb-2"
+                          className="md:w-[60px] w-[50px] mx-auto mb-0"
                         />
-                        <h2 className="text-center text-[26px] font-bold font-Montserrat">
+                        <h2 className="text-center md:text-[26px] text-[22px] font-bold font-Montserrat text-[#8649D0]">
                           30+
                         </h2>
-                        <p className="text-center font-Montserrat">
+                        <p className="text-center font-Montserrat font-medium text-[14px] md:text-[16px]">
                           Creators & Businesses
                         </p>
                       </div>
                       <div className="parent-stat">
                         <img
                           src={professionalImg}
-                          className="w-[65px] mx-auto mb-4 mt-2"
+                          className="md:w-[45px] w-[40px] mx-auto mb-2 mt-2"
                         />
-                        <h2 className="text-center text-[26px] font-bold font-Montserrat">
+                        <h2 className="text-center md:text-[26px] text-[22px] font-bold font-Montserrat text-[#8649D0]">
                           500+
                         </h2>
-                        <p className="text-center font-Montserrat">
+                        <p className="text-center font-Montserrat font-medium text-[14px] md:text-[16px]">
                           Professionals
                         </p>
                       </div>

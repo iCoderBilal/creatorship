@@ -3039,3 +3039,9 @@ input[type=range]::-moz-focus-outer {
   background-image: linear-gradient(160deg, #432269 58%, #1e053d 87%);
 
 }
+
+/* ______________________________ParentSection_____________________________ */
+
+.parent .cy4vq {
+  margin: 0;
+}
