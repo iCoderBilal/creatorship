@@ -9,6 +9,7 @@ import Vision from "./Components/Vision";
 import ParentCompany from "./Components/ParentCompany";
 import Features from "./Components/Features";
 import Contact from "./Components/Contact";
+import FooterBlock from "./Components/Footer";
 
 const Homepage = () => {
   return (
@@ -21,6 +22,7 @@ const Homepage = () => {
       <ParentCompany />
       <Features />
       <Contact />
+      <FooterBlock />
 
       {/* <HeroSection /> */}
     </>

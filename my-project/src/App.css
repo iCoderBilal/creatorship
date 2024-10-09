@@ -338,11 +338,11 @@ select:focus {
     );
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: #2563eb;
+  --tw-ring-color: #8649D0;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  border-color: #2563eb
+  border-color: #8649D0
 }
 
 input::-moz-placeholder,
@@ -3044,4 +3044,19 @@ input[type=range]::-moz-focus-outer {
 
 .parent .cy4vq {
   margin: 0;
+}
+
+
+/* ______________________________Contact_____________________________________ */
+
+
+
+
+/* __________________________________Footer_______________________ */
+
+.footer {
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  background: rgb(164, 104, 206);
+  background: linear-gradient(29deg, rgba(164, 104, 206, 1) 0%, rgba(164, 64, 184, 1) 0%, rgba(109, 65, 154, 1) 4%, rgba(30, 5, 61, 1) 22%);
 }
