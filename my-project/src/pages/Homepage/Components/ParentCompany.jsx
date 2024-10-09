@@ -29,7 +29,7 @@ const ParentCompany = () => {
                     Parent Company
                   </h2>
                   <p
-                    className="c3z20 c6xyh ceonn font-Montserrat"
+                    className="c3z20 c6xyh ceonn font-Montserrat text-gray-600"
                     data-aos="fade-up"
                     data-aos-anchor="[data-aos-id-3]"
                     data-aos-delay="200"
