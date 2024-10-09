@@ -8,6 +8,7 @@ import HeroSection from "./Testing";
 import Vision from "./Components/Vision";
 import ParentCompany from "./Components/ParentCompany";
 import Features from "./Components/Features";
+import Contact from "./Components/Contact";
 
 const Homepage = () => {
   return (
@@ -19,6 +20,7 @@ const Homepage = () => {
       <Vision />
       <ParentCompany />
       <Features />
+      <Contact />
 
       {/* <HeroSection /> */}
     </>
