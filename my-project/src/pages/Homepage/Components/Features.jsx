@@ -23,7 +23,7 @@ const Features = () => {
                   >
                     Features and Benefits
                   </h2>
-                  <p className="cxobv c6xyh ceonn font-Montserrat">
+                  <p className="cxobv c6xyh ceonn font-Montserrat text-left">
                     Discover how our cutting-edge tools and solutions empower
                     creators and businesses to achieve their goals effortlessly.
                     Explore the key features designed to enhance collaboration
@@ -68,10 +68,10 @@ const Features = () => {
                         1
                       </div>
                     </div>
-                    <h4 className="c4nhw cdxpy c1dgw czli9">
+                    <h4 className="c4nhw cdxpy c1dgw czli9 font-Montserrat">
                       Earn with your social presence
                     </h4>
-                    <p className="cxobv">
+                    <p className="cxobv font-Montserrat">
                       Influencers can earn by partnering with brands, creating
                       lasting relationships and better opportunities than
                       traditional ads.
@@ -85,10 +85,10 @@ const Features = () => {
                         2
                       </div>
                     </div>
-                    <h4 className="c4nhw cdxpy c1dgw czli9">
+                    <h4 className="c4nhw cdxpy c1dgw czli9 font-Montserrat">
                       Creators and Influencers
                     </h4>
-                    <p className="cxobv">
+                    <p className="cxobv font-Montserrat">
                       We support creators on all platforms, helping them connect
                       with businesses for influencer partnerships. Opportunities
                       for growth and collaboration are always available.
@@ -96,66 +96,67 @@ const Features = () => {
                   </div>
 
                   {/* 3rd item */}
-                  <div className="cx9ia c3f4j c6gay ci2ql cbt0x cybhr c233e c00pl ckl5k cyg2f cyhno cn4rc">
+                  <div className="cx9ia c3f4j c6gay ci2ql cbt0x cybhr c233e c00pl ckl5k  cyhno cn4rc">
                     <div className="czmmv">
                       <div className="cxwmo ca4kr c38qt c58pn cz523 cdxpy c29n1 cj1fh ch7hw bg-white text-[#8649D0]">
                         3
                       </div>
                     </div>
-                    <h4 className="c4nhw cdxpy c1dgw czli9">
+                    <h4 className="c4nhw cdxpy c1dgw czli9 font-Montserrat">
                       From Businesses to Enterprises
                     </h4>
-                    <p className="cxobv">
+                    <p className="cxobv font-Montserrat">
                       We connect businesses with creators to drive growth and
                       create impactful, results-driven campaigns.
                     </p>
                   </div>
 
-                  <div className="cx9ia c3f4j c6gay ci2ql cbt0x cybhr c233e c00pl ckl5k cyg2f cyhno cn4rc">
+                  <div className="cx9ia c3f4j c6gay ci2ql cbt0x cybhr c233e c00pl ckl5k cyg2f cyhno cn4rc md:mt-8">
                     <div className="czmmv">
                       <div className="cxwmo ca4kr c38qt c58pn cz523 cdxpy c29n1 cj1fh ch7hw bg-white text-[#8649D0]">
-                        1
+                        4
                       </div>
                     </div>
-                    <h4 className="c4nhw cdxpy c1dgw czli9">
-                      Earn with your social presence
+                    <h4 className="c4nhw cdxpy c1dgw czli9 font-Montserrat">
+                      Expand your customer base
                     </h4>
-                    <p className="cxobv">
-                      Influencers can earn by partnering with brands, creating
-                      lasting relationships and better opportunities than
-                      traditional ads.
+                    <p className="cxobv font-Montserrat">
+                      Partner with our creators to reach new audiences, build
+                      trust, and grow your brand. For a small share of profits,
+                      you can boost visibility and unlock growth.
                     </p>
                   </div>
 
-                  <div className="cx9ia c3f4j c6gay ci2ql cbt0x cybhr c233e c00pl ckl5k cyg2f cyhno cn4rc">
+                  <div className="cx9ia c3f4j c6gay ci2ql cbt0x cybhr c233e c00pl ckl5k cyg2f cyhno cn4rc md:mt-8">
                     <div className="czmmv">
                       <div className="cxwmo ca4kr c38qt c58pn cz523 cdxpy c29n1 cj1fh ch7hw bg-white text-[#8649D0]">
-                        1
+                        5
                       </div>
                     </div>
-                    <h4 className="c4nhw cdxpy c1dgw czli9">
-                      Earn with your social presence
+                    <h4 className="c4nhw cdxpy c1dgw czli9 font-Montserrat">
+                      Partnership Contracts
                     </h4>
-                    <p className="cxobv">
-                      Influencers can earn by partnering with brands, creating
-                      lasting relationships and better opportunities than
-                      traditional ads.
+                    <p className="cxobv font-Montserrat">
+                      We streamline contract negotiations, defining required
+                      impressions and profit shares to ensure transparency and
+                      mutual benefit for creators and businesses.
                     </p>
                   </div>
 
-                  <div className="cx9ia c3f4j c6gay ci2ql cbt0x cybhr c233e c00pl ckl5k cyg2f cyhno cn4rc">
+                  <div className="cx9ia c3f4j c6gay ci2ql cbt0x cybhr c233e c00pl ckl5k cyg2f cyhno cn4rc md:mt-8">
                     <div className="czmmv">
                       <div className="cxwmo ca4kr c38qt c58pn cz523 cdxpy c29n1 cj1fh ch7hw bg-white text-[#8649D0]">
-                        1
+                        6
                       </div>
                     </div>
-                    <h4 className="c4nhw cdxpy c1dgw czli9">
-                      Earn with your social presence
+                    <h4 className="c4nhw cdxpy c1dgw czli9 font-Montserrat">
+                      Legals and Security
                     </h4>
-                    <p className="cxobv">
-                      Influencers can earn by partnering with brands, creating
-                      lasting relationships and better opportunities than
-                      traditional ads.
+                    <p className="cxobv font-Montserrat">
+                      We ensure businesses get value for their investment and
+                      creators are fairly paid. Our platform guarantees
+                      transparent, compliant partnerships, fostering trust and
+                      long-term success.
                     </p>
                   </div>
                 </div>
