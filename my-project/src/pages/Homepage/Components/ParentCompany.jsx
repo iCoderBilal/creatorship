@@ -57,9 +57,9 @@ const ParentCompany = () => {
                     without the support it needs.
                   </p>
 
-                  <div>
+                  <div data-aos="fade-up">
                     <a
-                      className="bg-[#8649D0] hover:bg-[#643A8F] text-white font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb"
+                      className="bg-[#8649D0] hover:bg-[#643A8F] text-white font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb py-3"
                       href="support.html"
                     >
                       Get Brand Deals
@@ -94,7 +94,10 @@ const ParentCompany = () => {
                       data-aos-anchor="[data-aos-id-3]"
                     />
 
-                    <div className="parent-stats md:gap-0 gap-6 mt-4">
+                    <div
+                      className="parent-stats md:gap-0 gap-6 mt-4"
+                      data-aos="fade-up"
+                    >
                       {isMobile ? (
                         <Slider {...sliderSettings}>
                           <div className="parent-stat md:w-auto w-[280px]">

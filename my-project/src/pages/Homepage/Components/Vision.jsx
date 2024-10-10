@@ -21,7 +21,10 @@ const Vision = () => {
               >
                 Idea And Vision
               </h2>
-              <p className="cxobv c6xyh ceonn font-Montserrat text-gray-600 pt-8 font-medium">
+              <p
+                className="cxobv c6xyh ceonn font-Montserrat text-gray-600 pt-8 font-medium"
+                data-aos="fade-up"
+              >
                 In today's landscape, many successful creators look to transform
                 their social influence into a business, but they often lack the
                 expertise in entrepreneurship to fully capitalize on their
@@ -46,6 +49,7 @@ const Vision = () => {
                   speed="1"
                   loop
                   autoplay
+                  data-aos="fade-up"
                 />
               </div>
             </div>

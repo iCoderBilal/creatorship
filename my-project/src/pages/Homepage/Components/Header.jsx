@@ -30,7 +30,7 @@ const Header = ({ aboutlink, featureLink, contactLink }) => {
                 </a>
               </li>
               <li
-                className="cy5mp"
+                className="cy5mp cursor-pointer"
                 onClick={() => scrollToSection(featureLink)}
               >
                 <a className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat">
@@ -38,7 +38,7 @@ const Header = ({ aboutlink, featureLink, contactLink }) => {
                 </a>
               </li>
               <li
-                className="cy5mp"
+                className="cy5mp cursor-pointer"
                 onClick={() => scrollToSection(contactLink)}
               >
                 <a className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat">

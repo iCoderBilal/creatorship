@@ -24,7 +24,10 @@ const About = ({ aboutlink }) => {
               >
                 Work With Us
               </h2>
-              <p className="cxobv c6xyh ceonn font-Montserrat md:px-[10vw] pb-[10px]">
+              <p
+                className="cxobv c6xyh ceonn font-Montserrat md:px-[10vw] pb-[10px]"
+                data-aos="fade-up"
+              >
                 Creatorship is a platform that serves as a mediator and
                 facilitator for business deals and brand collaborations between
                 creators and businesses.
@@ -36,12 +39,16 @@ const About = ({ aboutlink }) => {
                     src={aboutImg}
                     alt="product image"
                     className="rounded-lg w-full dark:hidden h-full object-cover"
+                    data-aos="fade-up"
                   />
                 </div>
               </div>
 
               <div className="mt-12 mb-12 text-left grid lg:grid-cols-2 p-6 rounded-2xl bg-[#1E053D] max-w-2xl lg:max-w-6xl mx-auto lg:divide-x divide-y lg:divide-y-0 divide-gray-300 dark:divide-gray-800">
-                <div className="flex items-start gap-6 lg:pr-6 pb-6 lg:pb-0">
+                <div
+                  className="flex items-start gap-6 lg:pr-6 pb-6 lg:pb-0"
+                  data-aos="fade-up"
+                >
                   <div className="w-28">
                     <img src={creator} className="rounded-lg" />
                   </div>
@@ -56,7 +63,10 @@ const About = ({ aboutlink }) => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-6 lg:px-6 py-6 lg:py-0">
+                <div
+                  className="flex items-start gap-6 lg:px-6 py-6 lg:py-0"
+                  data-aos="fade-up"
+                >
                   <div className="w-28">
                     <img src={aboutBusiness} className="rounded-lg" />
                   </div>
