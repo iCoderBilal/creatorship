@@ -1,5 +1,6 @@
 import React from "react";
 import webLogo from "../../../assets/web-logo.png";
+import { Link } from "react-router-dom";
 
 const Header = ({ aboutlink, featureLink, contactLink }) => {
   const scrollToSection = (ref) => {
@@ -12,9 +13,9 @@ const Header = ({ aboutlink, featureLink, contactLink }) => {
           {/* Site branding */}
           <div className="ce0su cpmys">
             {/* Logo */}
-            <a className="c4ozt" href="index.html" aria-label="Cruip">
+            <Link className="c4ozt" aria-label="Cruip" to="/">
               <img src={webLogo} className="web-logo" alt="Logo" />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop navigation */}

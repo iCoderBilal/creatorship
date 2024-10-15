@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import Creator from "./pages/Creator/Creator";
 
 function App() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/creator" element={<Creator />} />
         </Routes>
       </Router>
     </>
