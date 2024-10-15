@@ -60,7 +60,7 @@ const ParentCompany = () => {
                   <div data-aos="fade-up">
                     <a
                       target="_blank"
-                      className="bg-[#8649D0] hover:bg-[#643A8F] text-white font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb py-3"
+                      className="bg-[#8649D0] hover:bg-[#643A8F] ease-out duration-300 text-white font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb py-3"
                       href="https://persistventures.com/"
                     >
                       Visit Website

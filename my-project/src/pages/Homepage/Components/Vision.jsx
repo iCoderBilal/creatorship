@@ -40,6 +40,16 @@ const Vision = () => {
                 business acumen of established companies, we create a win-win
                 scenario for everyone involved.
               </p>
+
+              <div>
+                <a
+                  target="_blank"
+                  className="bg-[#8649D0] text-white py-3 duration-300 ease-in-out hover:bg-[#643A8F] font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb"
+                  href="https://calendly.com/jackjay"
+                >
+                  Get Brand Deals
+                </a>
+              </div>
             </div>
             <div className="benefit-image md:basis-[50%] basis-[100%] flex justify-center items-center">
               <div className="md:w-[90%]">
