@@ -72,7 +72,7 @@ const About = ({ aboutlink }) => {
                   </div>
                   <div className="flex-1 space-y-1">
                     <h2 className="text-gray-200 dark:text-white font-semibold md:text-2xl text-xl font-Montserrat">
-                      High Quality
+                      Business
                     </h2>
                     <p className="text-gray-300 dark:text-gray-300 md:text-[16px] text-[13px] font-Montserrat">
                       Every business, small or big, needs market reach to grow
