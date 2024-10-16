@@ -3060,3 +3060,13 @@ input[type=range]::-moz-focus-outer {
   background: rgb(164, 104, 206);
   background: linear-gradient(29deg, rgba(164, 104, 206, 1) 0%, rgba(164, 64, 184, 1) 0%, rgba(109, 65, 154, 1) 4%, rgba(30, 5, 61, 1) 22%);
 }
+
+
+
+/* _________________________Creator-Hero____________________ */
+
+@media screen and (max-width: 765px) {
+  .creator-hero-heading {
+    font-size: 2.3rem;
+  }
+}

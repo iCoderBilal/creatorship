@@ -19,26 +19,26 @@ const Hero = () => {
         <div className="creator-hero relative">
           <img
             src={creator1}
-            className="w-[70px] rounded-full absolute left-[30%] top-[20%]"
+            className="w-[70px] rounded-full absolute left-[30%] md:top-[20%]  top-[13%]"
           />
 
           <img
             src={creator3}
-            className="w-[70px] rounded-full absolute right-[30%] top-[18%]"
+            className="w-[70px] rounded-full absolute right-[30%] md:top-[18%] top-[11%]"
           />
 
           <img
             src={creator4}
-            className="w-[70px] rounded-full absolute left-[40%] bottom-[8%]"
+            className="w-[70px] rounded-full absolute left-[40%] bottom-[8%] hidden lg:block"
           />
 
           <img
             src={creator2}
-            className="w-[70px] rounded-full absolute right-[30%] bottom-[10%]"
+            className="w-[70px] rounded-full absolute right-[30%] bottom-[10%] hidden lg:block"
           />
-          <div className="hero-content max-w-7xl mx-auto pb-32 pt-[15vw] px-[8vw]">
+          <div className="hero-content max-w-7xl mx-auto pb-32 sm:pt-[35vw] lg:pt-[15vw] pt-[50vw] px-[8vw]">
             <h1
-              className="c4nhw c1ig3 c7bak hero-heading font-Montserrat text-center"
+              className="c4nhw c1ig3 c7bak hero-heading font-Montserrat text-center creator-hero-heading"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -56,6 +56,16 @@ const Hero = () => {
               the creator to thrive. Our goal is to foster growth and success
               for all parties involved.
             </p>
+
+            <div className="w-fit mx-auto mb-4 md:mb-0">
+              <a
+                target="_blank"
+                className="duration-300 font-bold ease-in-out hover:bg-[#B077EE] font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb"
+                href="https://calendly.com/jackjay"
+              >
+                Get Brand Deals
+              </a>
+            </div>
           </div>
         </div>
       </section>
