@@ -19,7 +19,11 @@ const Join = () => {
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          <div className="bg-[#F4F7FA] p-6 shadow-lg rounded-[30px] md:row-span-2 flex justify-center flex-col">
+          <div
+            className="bg-[#F4F7FA] p-6 shadow-lg rounded-[30px] md:row-span-2 flex justify-center flex-col"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div className="flex gap-2 items-center justify-center mb-3">
               <span className="md:text-8xl text-6xl text-[#8649D0] mb-2">
                 ◈
@@ -34,7 +38,11 @@ const Join = () => {
               your reach and make a significant impact.
             </p>
           </div>
-          <div className="bg-[#F4F7FA] p-6 shadow-lg rounded-[30px] ">
+          <div
+            className="bg-[#F4F7FA] p-6 shadow-lg rounded-[30px] "
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div className="flex gap-2 items-center justify-center mb-3">
               <span className="md:text-8xl text-6xl text-[#8649D0] mb-2">
                 ◈
@@ -48,8 +56,12 @@ const Join = () => {
               and sponsored content that align perfectly with your brand.
             </p>
           </div>
-          <div className="bg-[#F4F7FA] p-6 shadow-lg rounded-[30px]  md:row-span-2 flex justify-center flex-col">
-            <div className="flex gap-2 items-center justify-center mb-3">
+          <div
+            className="hidden join-img-div p-6 shadow-lg rounded-[30px]  md:row-span-2 md:flex justify-center flex-col"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            {/* <div className="flex gap-2 items-center justify-center mb-3">
               <span className="md:text-8xl text-6xl text-[#8649D0] mb-2">
                 ◈
               </span>
@@ -62,22 +74,47 @@ const Join = () => {
               you'll find opportunities to endorse products, become a brand
               ambassador, and more. Expand your influence and explore new ways
               to shine.
-            </p>
+            </p> */}
           </div>
-          <div className="bg-[#F4F7FA] p-6 shadow-lg rounded-[30px]  ">
+          <div
+            className="bg-[#F4F7FA] p-6 shadow-lg rounded-[30px]  "
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div className="flex gap-2 items-center justify-center mb-3">
               <span className="md:text-8xl text-6xl text-[#8649D0] mb-2">
                 ◈
               </span>
               <h2 className="text-2xl font-bold mb-3 font-Montserrat">
-                Enhance Your Skills and Network
+                Broaden Your Creative Reach
               </h2>
             </div>
             <p className="cxobv c6xyh ceonn font-Montserrat text-gray-600 font-medium">
-              Access tools and resources from Creatorship to enhance your skills
-              and expand your network through targeted workshops and networking
-              events.
+              Step beyond the usual social media activities. With Creatorship,
+              you'll find opportunities to endorse products, become a brand
+              ambassador, and more.
             </p>
+          </div>
+
+          <div
+            className=" join-img-div p-6 shadow-lg rounded-[30px]  md:row-span-2 flex justify-center flex-col min-h-[400px] md:hidden"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            {/* <div className="flex gap-2 items-center justify-center mb-3">
+              <span className="md:text-8xl text-6xl text-[#8649D0] mb-2">
+                ◈
+              </span>
+              <h2 className="text-2xl md:text-3xl font-bold mb-3 font-Montserrat">
+                Broaden Your Creative Reach
+              </h2>
+            </div>
+            <p className="cxobv c6xyh ceonn font-Montserrat text-gray-600 font-medium">
+              Step beyond the usual social media activities. With Creatorship,
+              you'll find opportunities to endorse products, become a brand
+              ambassador, and more. Expand your influence and explore new ways
+              to shine.
+            </p> */}
           </div>
         </div>
       </div>
