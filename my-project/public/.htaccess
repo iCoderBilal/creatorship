@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteBase /
+
+# If a request is not a file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect all requests to index.html
+RewriteRule ^ index.html [L]
+
+
+
+
+

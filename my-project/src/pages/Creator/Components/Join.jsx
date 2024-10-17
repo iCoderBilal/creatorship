@@ -2,7 +2,7 @@ import React from "react";
 
 const Join = () => {
   return (
-    <div className="bg-white p-8">
+    <div className="bg-white md:p-8 p-4">
       <div className="max-w-7xl mx-auto md:py-16 py-16 pt-0">
         <div className="text-left mb-12">
           <h1

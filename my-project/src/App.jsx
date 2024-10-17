@@ -18,8 +18,8 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/creator" element={<Creator />} />
+          {/* <Route path="/" element={<Homepage />} /> */}
+          <Route path="/" element={<Creator />} />
         </Routes>
       </Router>
     </>
