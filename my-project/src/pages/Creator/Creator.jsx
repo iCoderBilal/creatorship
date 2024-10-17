@@ -6,6 +6,7 @@ import Works from "./Components/Works";
 import HowItWorks from "./Components/Works";
 import MarqueeDemo from "../Homepage/Components/ReviewMarquee";
 import FooterBlock from "../Homepage/Components/Footer";
+import CreatorReview from "./Components/CreatorReview";
 
 const Creator = () => {
   return (
@@ -14,6 +15,7 @@ const Creator = () => {
       <Hero />
       <Join />
       <MarqueeDemo />
+      <CreatorReview />
       <FooterBlock />
       {/* <HowItWorks /> */}
     </div>
