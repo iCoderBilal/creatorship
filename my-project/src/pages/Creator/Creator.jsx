@@ -15,7 +15,7 @@ const Creator = () => {
       <Hero />
       <Join />
       <MarqueeDemo />
-      <CreatorReview />
+      {/* <CreatorReview /> */}
       <FooterBlock />
       {/* <HowItWorks /> */}
     </div>
