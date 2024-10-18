@@ -36,7 +36,7 @@ const Hero = () => {
             src={creator2}
             className="w-[70px] rounded-full absolute right-[30%] bottom-[10%] hidden lg:block"
           />
-          <div className="hero-content max-w-7xl mx-auto pb-32 sm:pt-[35vw] lg:pt-[15vw] pt-[50vw] px-[8vw]">
+          <div className="hero-content max-w-7xl mx-auto pb-32 sm:pt-[28vw] lg:pt-[17vw] pt-[50vw] px-[8vw]">
             <h1
               className="c4nhw c1ig3 c7bak hero-heading font-Montserrat text-center creator-hero-heading"
               data-aos="fade-up"

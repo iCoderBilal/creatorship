@@ -18,7 +18,7 @@ const Join = () => {
             </span>
           </h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-16">
           <div
             className="bg-[#F4F7FA] p-6 shadow-lg rounded-[30px] md:row-span-2 flex justify-center flex-col"
             data-aos="fade-up"
@@ -57,7 +57,7 @@ const Join = () => {
             </p>
           </div>
           <div
-            className="hidden join-img-div p-6 shadow-lg rounded-[30px]  md:row-span-2 md:flex justify-center flex-col"
+            className="hidden join-img-div p-6 shadow-lg rounded-[30px]  md:row-span-2 lg:flex justify-center flex-col"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -97,7 +97,7 @@ const Join = () => {
           </div>
 
           <div
-            className=" join-img-div p-6 shadow-lg rounded-[30px]  md:row-span-2 flex justify-center flex-col min-h-[400px] md:hidden"
+            className=" join-img-div p-6 shadow-lg rounded-[30px]  md:row-span-2 flex justify-center flex-col min-h-[400px] md:min-h-[600px] lg:hidden"
             data-aos="fade-up"
             data-aos-delay="200"
           >

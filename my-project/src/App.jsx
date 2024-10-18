@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import Creator from "./pages/Creator/Creator";
+import Business from "./pages/Business/Business";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -17,9 +19,11 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Routes>
-          {/* <Route path="/" element={<Homepage />} /> */}
-          <Route path="/" element={<Creator />} />
+          <Route path="/" element={<Homepage />} />
+          <Route path="/creator" element={<Creator />} />
+          <Route path="/business" element={<Business />} />
         </Routes>
       </Router>
     </>

@@ -13,8 +13,8 @@ const Vision = () => {
     <>
       <div className="vision-container">
         <div className="max-w-7xl mx-auto ">
-          <div className="flex flex-wrap bg-white px-4 md:px-0 md:py-16 md:pb-0 py-6 rounded-lg justify-between items-center">
-            <div className="benefit-content md:basis-[45%] basis-[100%]">
+          <div className="flex flex-wrap bg-white px-4 lg:px-0 md:py-16 md:pb-0 py-6 rounded-lg justify-between items-center">
+            <div className="benefit-content lg:basis-[45%] basis-[100%]">
               <h2
                 data-aos="fade-up"
                 className="text-black text-left text-[9vw] leading-[9.5vw] md:text-[3.5vw] md:leading-[4vw] font-Montserrat font-bold"
@@ -51,7 +51,7 @@ const Vision = () => {
                 </a>
               </div>
             </div>
-            <div className="benefit-image md:basis-[50%] basis-[100%] flex justify-center items-center">
+            <div className="benefit-image lg:basis-[50%] basis-[100%] flex justify-center items-center">
               <div className="md:w-[90%]">
                 <dotlottie-player
                   src="https://lottie.host/7718f3f1-bd70-473d-b805-1de27ab23949/9V1avDzCxB.json"

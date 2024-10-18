@@ -30,18 +30,18 @@ const ParentCompany = () => {
           <div className="cl9ye cc8xx cdcfy chlof">
             <div className="cip9c c4i6y cpu0s">
               {/* Section content */}
-              <div className="cwihz cqmiq c38qt cwegj c17z2 clpz0 cyhno c4pup cklpe cdcfy c29n1">
+              <div className="cwihz cqmiq c38qt cwegj c17z2 clpz0 cyhno c4pup cklpe cdcfy c29n1 lg:flex-row flex-col">
                 {/* Content */}
-                <div className="cn3on cduyv cb320 ce0su">
+                <div className="cn3on cduyv cb320 ce0su md:mt-8 lg:mt-0">
                   {/* Copy */}
                   <h2
                     data-aos="fade-up"
-                    className="text-black md:text-left text-center text-[9vw] leading-[9.5vw] md:text-[3.5vw] md:leading-[4vw] font-Montserrat font-bold mb-2"
+                    className="text-black lg:text-left text-center text-[9vw] leading-[9.5vw] md:text-[3.5vw] md:leading-[4vw] font-Montserrat font-bold mb-2"
                   >
                     Parent Company
                   </h2>
                   <p
-                    className="c3z20 c6xyh ceonn font-Montserrat text-gray-600"
+                    className="c3z20 c6xyh ceonn font-Montserrat text-gray-600 text-center lg:text-left"
                     data-aos="fade-up"
                     data-aos-anchor="[data-aos-id-3]"
                     data-aos-delay="200"
@@ -85,7 +85,7 @@ const ParentCompany = () => {
                 </div>
 
                 {/* Image */}
-                <div className="cwihz ctp1d cogs9 c60si cjkjb c8r7v md:mr-[70px]">
+                <div className="cwihz ctp1d cogs9 c60si cjkjb c8r7v lg:mr-[70px] mr-0">
                   <div className="cyhno ctp3x cy4vq">
                     <img
                       src={pvimg}

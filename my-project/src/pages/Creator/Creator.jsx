@@ -7,12 +7,14 @@ import HowItWorks from "./Components/Works";
 import MarqueeDemo from "../Homepage/Components/ReviewMarquee";
 import FooterBlock from "../Homepage/Components/Footer";
 import CreatorReview from "./Components/CreatorReview";
+import ExclusiveFeatures from "./Components/ExclusiveFeatures";
 
 const Creator = () => {
   return (
     <div>
       <Header />
       <Hero />
+      <ExclusiveFeatures />
       <Join />
       <MarqueeDemo />
       {/* <CreatorReview /> */}

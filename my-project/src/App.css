@@ -3068,10 +3068,17 @@ input[type=range]::-moz-focus-outer {
 .join-img-div {
   background: url(./assets//creator-img.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 @media screen and (max-width: 765px) {
   .creator-hero-heading {
     font-size: 2.3rem;
   }
+}
+
+/* _______________Creator Exclusive-feature____________________________ */
+.exlusive-feature-1 {
+  background: rgb(80, 50, 119);
+  background: linear-gradient(0deg, rgba(80, 50, 119, 1) 0%, rgba(134, 92, 185, 1) 50%, rgba(80, 50, 119, 1) 100%);
 }

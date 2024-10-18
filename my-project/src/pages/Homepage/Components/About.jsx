@@ -2,6 +2,7 @@ import React from "react";
 import aboutImg from "../../../assets/about-img.jpg";
 import creator from "../../../assets/creator.jpg";
 import aboutBusiness from "../../../assets/aboutBusiness.jpg";
+import { Link } from "react-router-dom";
 
 const About = ({ aboutlink }) => {
   return (
@@ -45,39 +46,63 @@ const About = ({ aboutlink }) => {
               </div>
 
               <div className="mt-12 mb-12 text-left grid lg:grid-cols-2 p-6 rounded-2xl bg-[#1E053D] max-w-2xl lg:max-w-6xl mx-auto lg:divide-x divide-y lg:divide-y-0 divide-gray-300 dark:divide-gray-800">
-                <div
-                  className="flex items-start gap-6 lg:pr-6 pb-6 lg:pb-0"
-                  data-aos="fade-up"
-                >
-                  <div className="w-28">
-                    <img src={creator} className="rounded-lg" />
+                <div>
+                  <div
+                    className="flex-wrap flex items-start gap-6 lg:pr-6 pb-0 "
+                    data-aos="fade-up"
+                  >
+                    <div className="w-28 mx-auto">
+                      <img src={creator} className="rounded-lg mx-auto" />
+                    </div>
+                    <div className="md:flex-1 basis-[100%] space-y-1">
+                      <h2 className="text-gray-200 dark:text-white font-semibold md:text-2xl text-xl font-Montserrat md:text-left text-center">
+                        Creator
+                      </h2>
+                      <p className="text-gray-300 dark:text-gray-300 md:text-[16px] text-[16px] font-Montserrat  md:text-left text-center">
+                        Anyone with social influence can partner with a
+                        business, converting their social impact into an asset.
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex-1 space-y-1">
-                    <h2 className="text-gray-200 dark:text-white font-semibold md:text-2xl text-xl font-Montserrat">
-                      Creator
-                    </h2>
-                    <p className="text-gray-300 dark:text-gray-300 md:text-[16px] text-[13px] font-Montserrat">
-                      Anyone with social influence can partner with a business,
-                      converting their social impact into an asset.
-                    </p>
+                  <div className="lg:w-[96%] w-[100%] mt-4 lg:mb-0 mb-4">
+                    <Link to="/creator">
+                      <a
+                        target="_blank"
+                        className="duration-300 ease-in-out hover:bg-[#B077EE] font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb"
+                      >
+                        Learn More
+                      </a>
+                    </Link>
                   </div>
                 </div>
 
-                <div
-                  className="flex items-start gap-6 lg:px-6 py-6 lg:py-0"
-                  data-aos="fade-up"
-                >
-                  <div className="w-28">
-                    <img src={aboutBusiness} className="rounded-lg" />
+                <div>
+                  <div
+                    className="flex-wrap flex items-start gap-6 lg:px-6 pt-6 lg:py-0"
+                    data-aos="fade-up"
+                  >
+                    <div className="w-28 mx-auto">
+                      <img src={aboutBusiness} className="rounded-lg" />
+                    </div>
+                    <div className="md:flex-1 basis-[100%] space-y-1">
+                      <h2 className="text-gray-200 dark:text-white font-semibold md:text-2xl text-xl font-Montserrat text-center md:text-left">
+                        Business
+                      </h2>
+                      <p className="text-gray-300 dark:text-gray-300 md:text-[16px] text-[16px] font-Montserrat text-center md:text-left">
+                        Every business, small or big, needs market reach to grow
+                        and generate business.
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex-1 space-y-1">
-                    <h2 className="text-gray-200 dark:text-white font-semibold md:text-2xl text-xl font-Montserrat">
-                      Business
-                    </h2>
-                    <p className="text-gray-300 dark:text-gray-300 md:text-[16px] text-[13px] font-Montserrat">
-                      Every business, small or big, needs market reach to grow
-                      and generate business.
-                    </p>
+                  <div className="lg:w-[96%] w-[100%] lg:ml-5 mt-4">
+                    <Link to="/business">
+                      <a
+                        target="_blank"
+                        className="duration-300 ease-in-out hover:bg-[#B077EE] font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb"
+                      >
+                        Learn More
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
