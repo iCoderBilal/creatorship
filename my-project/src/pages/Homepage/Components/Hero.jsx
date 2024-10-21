@@ -46,13 +46,10 @@ const Hero = () => {
                   data-aos-delay="300"
                 >
                   <div>
-                    <a
-                      target="_blank"
-                      className="duration-300 ease-in-out hover:bg-[#B077EE] font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb"
-                      href="https://calendly.com/jackjay"
-                    >
-                      Get Brand Deals
-                    </a>
+                    <button className="  font-Montserrat font-semibold relative inline-flex h-10 w-full items-center justify-center rounded-md bg-white px-6 text-gray-950 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50">
+                      <div className="absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#8678f9] opacity-75 blur" />
+                      Book a Meeting
+                    </button>
                   </div>
                 </div>
               </div>

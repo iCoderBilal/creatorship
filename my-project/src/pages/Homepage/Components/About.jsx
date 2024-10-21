@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const About = ({ aboutlink }) => {
   return (
-    <section data-aos-id-2="" ref={aboutlink}>
+    <section data-aos-id-2="" ref={aboutlink} id="aboutsection">
       <div className="cqx6l cyhno cdcfy">
         {/* Background */}
         <div

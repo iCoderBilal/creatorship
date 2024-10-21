@@ -24,9 +24,12 @@ const Header = ({ aboutlink, featureLink, contactLink }) => {
             <ul className="c38qt c17z2 cjsl1 c29n1 c7e8i">
               <li
                 className="cy5mp cursor-pointer"
-                onClick={() => scrollToSection(aboutlink)}
+                // onClick={() => scrollToSection(aboutlink)}
               >
-                <a className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat">
+                <a
+                  href="#aboutsection"
+                  className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat"
+                >
                   About Us
                 </a>
               </li>
