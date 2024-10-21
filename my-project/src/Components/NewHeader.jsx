@@ -1,17 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import webLogo from "../assets/web-logo.png";
 import { Link } from "react-router-dom";
 import downArrow from "../assets/down-arrow.png";
 
 const Navbar = () => {
   const [openNavbar, setOpenNavbar] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [openSubMenu, setOpenSubMenu] = useState(false);
 
   const toggleNavbar = () => {
-    setOpenNavbar((openNavbar) => !openNavbar);
+    setOpenNavbar((prev) => !prev);
   };
 
+  const toggleSubMenu = () => {
+    setOpenSubMenu((prev) => !prev);
+  };
+
+  // Check if the screen size is mobile
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    handleResize(); // Run on mount to check the initial size
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <header className="fixed top-0 inset-x-0 z-50 min-h-24 flex items-center bg-[#1E053D]">
+    <header className="fixed top-0 inset-x-0 z-50 min-h-24 flex items-center bg-[#1E053D] max-w-[100vw]">
       <div className="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 h-full items-center">
         <nav className="flex justify-between items-center h-full">
           <div className="flex min-w-max items-center">
@@ -20,7 +37,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div
-            className={`flex flex-col space-y-10 inset-0 fixed top-0 h-[100dvh] bg-white dark:bg-gray-950 lg:!bg-transparent py-20 px-5 sm:px-10 md:px-14
+            className={`flex flex-col space-y-10 inset-0 fixed top-0 h-[100dvh] bg-[#1E053D] dark:bg-gray-950 lg:!bg-transparent py-20 px-5 sm:px-10 md:px-14
             transition-all ease-linear duration-300 lg:flex-row  lg:py-0 lg:px-0 lg:space-y-0 lg:gap-x-10 lg:relative lg:top-0 lg:h-full lg:items-center lg:justify-between lg:w-max
             ${
               openNavbar
@@ -30,14 +47,26 @@ const Navbar = () => {
           >
             <ul className="flex flex-col gap-y-5 text-gray-700 dark:text-gray-300 lg:items-center lg:flex-row lg:gap-x-5 lg:h-full lg:justify-center lg:flex-1">
               <li className="relative group">
-                <div className="flex items-center cursor-pointer">
+                <div
+                  className="flex items-center cursor-pointer"
+                  onClick={isMobile ? toggleSubMenu : undefined} // Toggle submenu on click for mobile
+                >
                   <a className="pr-[5px] cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat bg-transparent cursor-pointer hover:bg-transparent">
                     Products
                   </a>
                   <img src={downArrow} className="w-[18px] h-[18px]" />
                 </div>
                 {/* Submenu */}
-                <ul className="border-white border-[2px] absolute left-0 min-w-48 bg-[#1E053D] dark:bg-gray-800 shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 invisible">
+                <ul
+                  className={`border-white border-[2px] absolute left-0 min-w-48 bg-[#1E053D] dark:bg-gray-800 shadow-lg rounded-md transition-opacity duration-300
+                  ${
+                    isMobile
+                      ? openSubMenu
+                        ? "opacity-100 visible"
+                        : "opacity-0 invisible"
+                      : "opacity-0 group-hover:opacity-100 group-hover:visible"
+                  }`}
+                >
                   <Link to="/creator">
                     <li className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-200 hover:text-black duration-300 ease-in-out">
                       <a
@@ -97,7 +126,7 @@ const Navbar = () => {
                   href="#aboutsection"
                   className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat bg-transparent"
                 >
-                  About Us
+                  Contact Us
                 </a>
               </li>
             </ul>
@@ -113,7 +142,7 @@ const Navbar = () => {
               onClick={() => {
                 toggleNavbar();
               }}
-              className="p-3 rounded-full bg-emerald-600 dark:bg-emerald-500 outline-none w-12 aspect-square flex flex-col relative justify-center items-center"
+              className="p-3 rounded-full bg-[#8649D0] outline-none w-12 aspect-square flex flex-col relative justify-center items-center"
             >
               <span className="sr-only">toggle navbar</span>
               <span

@@ -71,7 +71,8 @@ html {
 
 body {
   margin: 0;
-  line-height: inherit
+  line-height: inherit;
+  overflow-x: hidden;
 }
 
 hr {
@@ -2971,7 +2972,7 @@ input[type=range]::-moz-focus-outer {
 
 @media screen and (max-width: 767px) {
   .web-logo {
-    width: 70px;
+    width: 90px;
 
   }
 
@@ -2989,6 +2990,11 @@ input[type=range]::-moz-focus-outer {
 
 /* _______________________Hero________________________ */
 
+.hero-section {
+  background: rgb(78, 46, 117);
+  background: linear-gradient(0deg, rgba(78, 46, 117, 1) 0%, rgba(30, 5, 61, 1) 30%, rgba(30, 5, 61, 1) 100%);
+}
+
 .c43am {
   background: rgb(164, 104, 206);
   background: linear-gradient(29deg, rgba(164, 104, 206, 1) 0%, rgba(164, 64, 184, 1) 0%, rgba(109, 65, 154, 1) 4%, rgba(30, 5, 61, 1) 22%);
@@ -2999,10 +3005,7 @@ input[type=range]::-moz-focus-outer {
   width: 40vw;
 }
 
-.hero-img {
-  width: 27vw;
-  margin: 0 auto;
-}
+
 
 .hero-atc {
   color: black;
