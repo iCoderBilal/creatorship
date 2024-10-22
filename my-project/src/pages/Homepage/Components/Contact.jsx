@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
-const Contact = ({ contactLink }) => {
+const ContactForm = ({ contactLink }) => {
   const notify = () => toast.success("Successfully toasted!");
   const [userData, setUserData] = useState({
     firstName: "",
@@ -164,4 +164,4 @@ const Contact = ({ contactLink }) => {
   );
 };
 
-export default Contact;
+export default ContactForm;

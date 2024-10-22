@@ -63,7 +63,7 @@ const Hero = () => {
                   {/* Image */}
                   <img
                     src={heroImg}
-                    className="hero-img cwihz rounded-tl-[20px] rounded-tr-[20px]"
+                    className="w-[27vw] cwihz rounded-tl-[20px] rounded-tr-[20px] mx-auto hidden lg:block"
                     alt="Credit card"
                     data-aos="fade-up"
                   />

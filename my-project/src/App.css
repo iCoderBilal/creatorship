@@ -3013,12 +3013,10 @@ input[type=range]::-moz-focus-outer {
 
 @media screen and (max-width: 767px) {
   .hero-content {
-    padding-bottom: 190px;
+    /* padding-bottom: 190px; */
   }
 
-  .hero-img {
-    display: none;
-  }
+
 }
 
 @media screen and (max-width: 1023px) {

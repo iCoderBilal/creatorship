@@ -8,10 +8,11 @@ import HeroSection from "./Testing";
 import Vision from "./Components/Vision";
 import ParentCompany from "./Components/ParentCompany";
 import Features from "./Components/Features";
-import Contact from "./Components/Contact";
+
 import FooterBlock from "./Components/Footer";
 import Navbar from "../../Components/NewHeader";
 import { MarqueeDemoVertical } from "./Components/HeroSlider";
+import ContactForm from "./Components/Contact";
 
 const Homepage = () => {
   const aboutlink = useRef(null);
@@ -33,7 +34,7 @@ const Homepage = () => {
       <Vision />
       <ParentCompany />
       <Features featureLink={featureLink} />
-      <Contact contactLink={contactLink} />
+      <ContactForm contactLink={contactLink} />
       <FooterBlock />
 
       {/* <HeroSection /> */}

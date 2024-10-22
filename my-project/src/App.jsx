@@ -7,6 +7,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 import Creator from "./pages/Creator/Creator";
 import Business from "./pages/Business/Business";
 import ScrollToTop from "./Components/ScrollToTop";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/creator" element={<Creator />} />
           <Route path="/business" element={<Business />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </>

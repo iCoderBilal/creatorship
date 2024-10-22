@@ -8,11 +8,12 @@ import MarqueeDemo from "../Homepage/Components/ReviewMarquee";
 import FooterBlock from "../Homepage/Components/Footer";
 import CreatorReview from "./Components/CreatorReview";
 import ExclusiveFeatures from "./Components/ExclusiveFeatures";
+import Navbar from "../../Components/NewHeader";
 
 const Creator = () => {
   return (
     <div>
-      <Header />
+      <Navbar />
       <Hero />
       <ExclusiveFeatures />
       <Join />
