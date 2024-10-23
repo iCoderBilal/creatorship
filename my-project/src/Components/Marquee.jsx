@@ -14,7 +14,7 @@ const Marquee = ({
   return (
     <div
       {...props}
-      className={`group flex overflow-hidden p-2 [--duration:40s] [--gap:1rem] [gap:var(--gap)] ${
+      className={`group flex overflow-hidden p-2 [--duration:20s] [--gap:1rem] [gap:var(--gap)] ${
         vertical ? "flex-col" : "flex-row"
       } ${className}`}
     >

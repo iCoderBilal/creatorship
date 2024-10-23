@@ -28,7 +28,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 min-h-24 flex items-center bg-[#1E053D] max-w-[100vw]">
+    <header className="fixed top-0 inset-x-0 z-50 min-h-24 flex items-center bg-[#1E053D]  max-w-[100vw]">
       <div className="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 h-full items-center">
         <nav className="flex justify-between items-center h-full">
           <div className="flex min-w-max items-center">
@@ -91,14 +91,14 @@ const Navbar = () => {
                 </ul>
               </li>
 
-              <li>
+              {/* <li>
                 <a
                   href="#aboutsection"
                   className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat bg-transparent"
                 >
                   About Us
                 </a>
-              </li>
+              </li> */}
 
               <li className="relative group">
                 <div className="flex items-center cursor-pointer">

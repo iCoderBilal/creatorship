@@ -4,7 +4,7 @@ export function SparklesTextDemo() {
   return (
     <SparklesText
       text="Partnership"
-      className="tracking-wide text-[50px] lg:text-[80px]"
+      className="tracking-wide text-[13vw] md:text-[80px]"
     />
   );
 }
