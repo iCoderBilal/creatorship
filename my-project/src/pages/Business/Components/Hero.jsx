@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <main className="c7e8i">
       {/* Hero */}
-      <section className="cyhno">
+      <section className="cyhno pb-[150px] md:pb-0">
         {/* Bg */}
         <div
           className="chf8c cistn ch1vk c5aqy c43am cx5bd c5llv ctehq cakxp coou2"

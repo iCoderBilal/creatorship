@@ -1,14 +1,7 @@
 import React, { useState } from "react";
-import aboutImg from "../../../assets/about-img.jpg";
 import creator from "../../../assets/social-media.png";
-import aboutBusiness from "../../../assets/aboutBusiness.jpg";
 import { Link } from "react-router-dom";
-import PulsatingButton from "../../../Components/PulseButton";
-import { PulsatingButtonDemo } from "./HeroButton";
 import businessImg from "../../../assets/business-3d.png";
-import vector1 from "../../../assets/vector-1.png";
-import { RippleDemo } from "./Ripple";
-import MyComponent from "../../../Components/VantaWaves";
 
 const About = ({ aboutlink }) => {
   const [isCreator, setIsCreator] = useState(true);

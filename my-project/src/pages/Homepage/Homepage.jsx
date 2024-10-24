@@ -13,6 +13,7 @@ import FooterBlock from "./Components/Footer";
 import Navbar from "../../Components/NewHeader";
 import { MarqueeDemoVertical } from "./Components/HeroSlider";
 import ContactForm from "./Components/Contact";
+import Benefits from "./Components/Benefits";
 
 const Homepage = () => {
   const aboutlink = useRef(null);
@@ -31,6 +32,7 @@ const Homepage = () => {
       <MarqueeDemo />
 
       <About aboutlink={aboutlink} />
+      <Benefits />
       <Vision />
       <ParentCompany />
       <Features featureLink={featureLink} />

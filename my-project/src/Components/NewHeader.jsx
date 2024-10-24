@@ -91,14 +91,14 @@ const Navbar = () => {
                 </ul>
               </li>
 
-              {/* <li>
+              <li>
                 <a
-                  href="#aboutsection"
+                  href=""
                   className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat bg-transparent"
                 >
                   About Us
                 </a>
-              </li> */}
+              </li>
 
               <li className="relative group">
                 <div className="flex items-center cursor-pointer">
