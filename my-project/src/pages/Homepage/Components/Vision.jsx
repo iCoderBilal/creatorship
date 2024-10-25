@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { NeonGradientCardDemo } from "./NeonBackground";
 
 const Vision = () => {
   useEffect(() => {
@@ -11,57 +12,59 @@ const Vision = () => {
   }, []);
   return (
     <>
-      <div className="vision-container">
-        <div className="max-w-7xl mx-auto ">
-          <div className="flex flex-wrap bg-white px-4 lg:px-0 md:py-16 md:pb-0 py-6 rounded-lg justify-between items-center">
-            <div className="benefit-content lg:basis-[45%] basis-[100%]">
-              <h2
-                data-aos="fade-up"
-                className="text-black text-left text-[9vw] leading-[9.5vw] md:text-[3.5vw] md:leading-[4vw] font-Montserrat font-bold"
-              >
-                Idea And Vision
-              </h2>
-              <p
-                className="cxobv c6xyh ceonn font-Montserrat text-gray-600 pt-8 font-medium"
-                data-aos="fade-up"
-              >
-                In today's landscape, many successful creators look to transform
-                their social influence into a business, but they often lack the
-                expertise in entrepreneurship to fully capitalize on their
-                impact.
-                <div className="mb-4" />
-                On the other hand, businesses, while supported by investors and
-                proven models, frequently face stagnation due to limited market
-                reach.
-                <div className="mb-4" />
-                At Creatorship, we unite creators and businesses, leveraging the
-                unique strengths of each to foster growth and success. By
-                combining the creativity and influence of creators with the
-                business acumen of established companies, we create a win-win
-                scenario for everyone involved.
-              </p>
+      <div className="vision w-full lg:pb-0 pb-16 pt-4">
+        <div className="flex-wrap lg:flex-nowrap vision-container max-w-7xl md:mx-auto h-full bg-[#1E053D]/30 backdrop-blur-md rounded-lg flex justify-between items-center md:px-16 py-0 px-4 mx-4">
+          {/* <NeonGradientCardDemo /> */}
+          <div className="content lg:basis-[50%] basis-[100%] lg:order-1 order-2">
+            <h2
+              data-aos="fade-up"
+              className="text-white text-center hidden lg:block text-[9vw] leading-[9.5vw] md:text-[3.5vw] md:leading-[4vw] font-Montserrat font-bold"
+            >
+              Idea And Vision
+            </h2>
+            <p
+              className="cxobv c6xyh ceonn font-Montserrat text-gray-200 pt-8 font-medium mt-[-60px] lg:mt-0 text-center"
+              data-aos="fade-up"
+            >
+              Creatorship bridges the gap.{" "}
+              <span className="text-[#fff] font-extrabold tracking-wider">
+                We connect creators with their ideal business partners,
+              </span>{" "}
+              leveraging their combined strengths for mutual growth. Imagine
+              creators' influence fuels brand reach, while business expertise
+              fosters creator success. It's a win-win for creators and
+              businesses alike.
+              <div className="mb-4"></div>
+              Together, we unlock limitless possibilities, propelling both
+              creators and businesses towards unprecedented success.
+            </p>
 
-              <div>
-                <a
-                  target="_blank"
-                  className="bg-[#8649D0] text-white py-3 duration-300 ease-in-out hover:bg-[#643A8F] font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb"
-                  href="https://calendly.com/jackjay"
-                >
-                  Get Brand Deals
-                </a>
-              </div>
+            <div className="w-fit mx-auto">
+              <a href="https://calendly.com/jackjay">
+                <button className="button-hover  font-Montserrat font-bold relative inline-flex h-10 w-full items-center justify-center rounded-md bg-white px-6 text-gray-950 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 duration-200 ease-in-out transition">
+                  <div className="font-bold absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#8678f9] opacity-75 blur" />
+                  Book a Meeting
+                </button>
+              </a>
             </div>
-            <div className="benefit-image lg:basis-[50%] basis-[100%] flex justify-center items-center">
-              <div className="md:w-[90%]">
-                <dotlottie-player
-                  src="https://lottie.host/7718f3f1-bd70-473d-b805-1de27ab23949/9V1avDzCxB.json"
-                  background="transparent"
-                  speed="1"
-                  loop
-                  autoplay
-                  data-aos="fade-up"
-                />
-              </div>
+          </div>
+
+          <div className="vision-img lg:basis-[50%] basis-[100%] lg:order-2 order-1">
+            <h2
+              data-aos="fade-up"
+              className="text-white mt-8 mb-[-20px] text-center lg:hidden  text-[9vw] leading-[9.5vw] md:text-[3.5vw] md:leading-[4vw] font-Montserrat font-bold"
+            >
+              Idea And Vision
+            </h2>
+            <div className="md:w-[100%]">
+              <dotlottie-player
+                src="https://lottie.host/87e9fabd-c4c6-49ac-8443-2ca3679a46b3/XqN61y43od.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+                data-aos="fade-up"
+              />
             </div>
           </div>
         </div>

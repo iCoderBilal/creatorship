@@ -1,115 +1,28 @@
-/* style.css */
-
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-section {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.card {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    width: 350px;
-    height: 500px;
-    background-color: black;
-    border: 1em;
-    padding: 0.5em;
-    will-change: transform;
-    z-index: 2;
-}
-
-.outro {
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.outro h2 {
-    color: #ded8c8;
-    font-size: 30px;
-    letter-spacing: -0.005em;
-}
-
-.sticky {
+/* Style for the scrollable container */
+.scrollable-container {
+    height: 200vh;
+    /* Makes sure there's enough space to scroll */
     position: relative;
-    background: #ded8c8;
 }
 
-.sticky-header {
+/* Centering the heading both horizontally and vertically */
+.centering-wrapper {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 250vw;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centering via translation */
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    will-change: transform;
 }
 
-.sticky-header h1 {
-    margin: 0;
-    color: black;
-    font-size: 30vw;
-    font-weight: lighter;
-    letter-spacing: -0.05em;
-    line-height: 100%;
-}
-
-.card .card-img {
-    width: 100%;
-    height: 200px;
-    border-radius: 0.5em;
-    overflow: hidden;
-}
-
-.card-content {
-    width: 100%;
-    height: 275px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
-    padding: 0.5em;
-}
-
-.card-content h2 {
-    font-size: 42px;
-    font-weight: lighter;
-    letter-spacing: -0.005em;
-}
-
-.card-content p {
-    font-size: 20px;
-    font-weight: lighter;
-    letter-spacing: -0.005em;
-}
-
-html.lenis,
-html.lenis body {
-    height: auto;
-}
-
-.lenis.lenis-smooth {
-    scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-    overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-    pointer-events: none;
+/* Heading style */
+.moving-heading {
+    font-size: 3rem;
+    transform: translateX(100vw);
+    /* Starts off-screen to the right */
+    white-space: nowrap;
+    /* Prevents the heading text from wrapping */
 }

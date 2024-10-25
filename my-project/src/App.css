@@ -3038,8 +3038,18 @@ input[type=range]::-moz-focus-outer {
 
 
 .about-section {
-  background-color: #432269;
-  background-image: linear-gradient(160deg, #432269 58%, #1e053d 87%);
+  background: rgb(30, 5, 61);
+  background: linear-gradient(180deg, rgba(30, 5, 61, 1) 0%, rgba(30, 5, 61, 1) 45%, rgba(78, 46, 117, 1) 100%);
+
+}
+
+/* _________________________Features-Section_______________________ */
+
+
+.vision {
+  background: rgb(30, 5, 61);
+  background: linear-gradient(0deg, rgba(30, 5, 61, 1) 0%, rgba(30, 5, 61, 1) 45%, rgba(78, 46, 117, 1) 100%);
+
 
 }
 

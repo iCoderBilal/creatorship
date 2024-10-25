@@ -32,7 +32,7 @@ const Homepage = () => {
       <MarqueeDemo />
 
       <About aboutlink={aboutlink} />
-      <Benefits />
+      {/* <Benefits /> */}
       <Vision />
       <ParentCompany />
       <Features featureLink={featureLink} />
