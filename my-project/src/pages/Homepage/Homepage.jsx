@@ -32,10 +32,10 @@ const Homepage = () => {
       <MarqueeDemo />
 
       <About aboutlink={aboutlink} />
-      {/* <Benefits /> */}
+
       <Vision />
       <ParentCompany />
-      <Features featureLink={featureLink} />
+      {/* <Features featureLink={featureLink} /> */}
       <ContactForm contactLink={contactLink} />
       <FooterBlock />
 
