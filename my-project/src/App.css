@@ -3053,6 +3053,12 @@ input[type=range]::-moz-focus-outer {
 
 }
 
+/* ________________________________Benefits-Section_____________________________ */
+.benefit-card {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(224, 224, 224, 1) 45%, rgba(155, 140, 173, 1) 69%, rgba(78, 46, 117, 1) 100%);
+}
+
 /* ______________________________ParentSection_____________________________ */
 
 .parent .cy4vq {
