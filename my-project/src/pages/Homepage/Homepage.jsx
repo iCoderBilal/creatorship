@@ -35,7 +35,7 @@ const Homepage = () => {
 
       <Vision />
       <ParentCompany />
-      <Benefits />
+      {/* <Benefits /> */}
       {/* <Features featureLink={featureLink} /> */}
       <ContactForm contactLink={contactLink} />
       <FooterBlock />

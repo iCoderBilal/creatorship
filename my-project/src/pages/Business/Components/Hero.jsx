@@ -48,10 +48,10 @@ const Hero = () => {
                   <div>
                     <a
                       target="_blank"
-                      className="duration-300 ease-in-out hover:bg-[#B077EE] font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb"
-                      href="https://calendly.com/jackjay"
+                      className="font-bold duration-300 ease-in-out hover:bg-[#B077EE] font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb"
+                      href="https://calendly.com/creatorships/brands"
                     >
-                      Get Brand Deals
+                      Get Creator Deals
                     </a>
                   </div>
                 </div>

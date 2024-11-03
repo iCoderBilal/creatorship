@@ -8,6 +8,7 @@ import Creator from "./pages/Creator/Creator";
 import Business from "./pages/Business/Business";
 import ScrollToTop from "./Components/ScrollToTop";
 import Contact from "./pages/Contact/Contact";
+import Meeting from "./pages/Meeting/Meeting";
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/creator" element={<Creator />} />
           <Route path="/business" element={<Business />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/bookameeting" element={<Meeting />} />
         </Routes>
       </Router>
     </>

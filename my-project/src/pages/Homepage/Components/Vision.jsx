@@ -40,7 +40,7 @@ const Vision = () => {
             </p>
 
             <div className="w-fit mx-auto">
-              <a href="https://calendly.com/jackjay">
+              <a href="https://calendly.com/creatorships/" target="_blank">
                 <button className="button-hover  font-Montserrat font-bold relative inline-flex h-10 w-full items-center justify-center rounded-md bg-white px-6 text-gray-950 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 duration-200 ease-in-out transition">
                   <div className="font-bold absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#8678f9] opacity-75 blur" />
                   Book a Meeting

@@ -61,7 +61,7 @@ const Hero = () => {
               <a
                 target="_blank"
                 className="duration-300 font-bold ease-in-out hover:bg-[#B077EE] font-Montserrat hero-atc ctsgt ctopb c2c8i cwa1c ch1vk c4sti cpi22 cogk8 cmjy8 c38qt c98p9 c4nhw co504 cyhno cn4p0 cjkjb"
-                href="https://calendly.com/jackjay"
+                href="https://calendly.com/creatorships/creator"
               >
                 Get Brand Deals
               </a>

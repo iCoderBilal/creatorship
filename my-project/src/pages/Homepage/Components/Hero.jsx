@@ -37,7 +37,7 @@ const Hero = () => {
             </p>
 
             <div className="w-full flex  lg:min-w-max lg:items-center justify-center lg:justify-start">
-              <a href="https://calendly.com/jackjay" target="_blank">
+              <a href="https://calendly.com/creatorships/" target="_blank">
                 <PulsatingButtonDemo />
               </a>
             </div>
