@@ -14,6 +14,7 @@ import Navbar from "../../Components/NewHeader";
 import { MarqueeDemoVertical } from "./Components/HeroSlider";
 import ContactForm from "./Components/Contact";
 import Benefits from "./Components/Benefits";
+import FinalCta from "./Components/FinalCta";
 
 const Homepage = () => {
   const aboutlink = useRef(null);
@@ -36,8 +37,9 @@ const Homepage = () => {
       <Vision />
       <ParentCompany />
       {/* <Benefits /> */}
-      {/* <Features featureLink={featureLink} /> */}
+      <Features featureLink={featureLink} />
       <ContactForm contactLink={contactLink} />
+      <FinalCta />
       <FooterBlock />
 
       {/* <HeroSection /> */}

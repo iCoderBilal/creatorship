@@ -11,7 +11,8 @@ export default {
         'deep-blue': '0 10px 15px -3px rgba(0, 0, 139, 0.5), 0 4px 6px -4px rgba(0, 0, 139, 0.5)'
       },
       fontFamily: {
-        Montserrat: ["Montserrat", "sans-serif"]
+        Montserrat: ["Montserrat", "sans-serif"],
+        Faculty: ['Faculty Glyphic', 'sans-serif'],
       },
       // Combine all animations here
       animation: {

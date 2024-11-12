@@ -15,7 +15,7 @@ const Hero = () => {
               Leading Platform for Collaborations 🤝
             </h3>
             <h1
-              className="c4nhw c1ig3 c7bak hero-heading font-Montserrat text-[#cb8ff9] lg:text-[3.8vw] text-[7vw] tracking-wide lg:text-left text-center"
+              className="c4nhw c1ig3 c7bak hero-heading font-bolder tracking-wider font-Faculty text-[#cb8ff9] lg:text-[4vw] text-[7vw] lg:text-left text-center"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -26,7 +26,7 @@ const Hero = () => {
               </span>
             </h1>
             <p
-              className="cxobv c6xyh ceonn font-Montserrat lg:text-left text-center"
+              className="cxobv c6xyh ceonn font-Faculty tracking-wide lg:text-left text-center"
               data-aos="fade-up"
               data-aos-delay="200"
             >
