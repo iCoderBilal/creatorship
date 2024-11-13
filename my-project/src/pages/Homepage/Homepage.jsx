@@ -15,6 +15,8 @@ import { MarqueeDemoVertical } from "./Components/HeroSlider";
 import ContactForm from "./Components/Contact";
 import Benefits from "./Components/Benefits";
 import FinalCta from "./Components/FinalCta";
+import FAQ from "./Components/FAQ";
+import Worrying from "./Components/Worrying";
 
 const Homepage = () => {
   const aboutlink = useRef(null);
@@ -30,15 +32,18 @@ const Homepage = () => {
       /> */}
 
       <Hero />
+
       <MarqueeDemo />
+
+      {/* <Worrying /> */}
 
       <About aboutlink={aboutlink} />
 
       <Vision />
+
       <ParentCompany />
       {/* <Benefits /> */}
-      <Features featureLink={featureLink} />
-      <ContactForm contactLink={contactLink} />
+      <FAQ />
       <FinalCta />
       <FooterBlock />
 

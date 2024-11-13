@@ -9,6 +9,7 @@ import Business from "./pages/Business/Business";
 import ScrollToTop from "./Components/ScrollToTop";
 import Contact from "./pages/Contact/Contact";
 import Meeting from "./pages/Meeting/Meeting";
+import usePageTracking from "./Components/usePageTracking";
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
     <>
       <Router>
         <ScrollToTop />
+        <usePageTracking />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/creator" element={<Creator />} />

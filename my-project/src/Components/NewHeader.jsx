@@ -100,14 +100,14 @@ const Navbar = () => {
                 </a>
               </li>
 
-              <li className="relative group">
+              {/* <li className="relative group">
                 <div className="flex items-center cursor-pointer">
                   <a className="pr-[5px] cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat bg-transparent cursor-pointer hover:bg-transparent">
                     Resources
                   </a>
                   <img src={downArrow} className="w-[18px] h-[18px]" />
                 </div>
-                {/* Submenu */}
+
                 <ul className="border-white border-[2px] absolute left-0 min-w-48 bg-[#1E053D] dark:bg-gray-800 shadow-lg rounded-md opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 invisible">
                   <Link to="/">
                     <li className="py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-200 hover:text-black duration-300 ease-in-out">
@@ -120,7 +120,7 @@ const Navbar = () => {
                     </li>
                   </Link>
                 </ul>
-              </li>
+              </li> */}
               <li>
                 <Link to="/contact">
                   <a className="cv4t9 c9gu4 c38qt cbnx3 c98p9 co504 cn4p0 ck31x font-Montserrat bg-transparent">

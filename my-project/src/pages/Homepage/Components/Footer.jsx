@@ -59,7 +59,7 @@ const FooterBlock = () => {
             </a>
 
             <a
-              href="https://www.instagram.com/creatorship2024"
+              href="https://www.instagram.com/creatorships_"
               aria-label="social link"
               target="_blank"
             >

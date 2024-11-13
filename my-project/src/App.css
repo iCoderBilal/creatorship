@@ -3089,8 +3089,7 @@ input[type=range]::-moz-focus-outer {
 /* __________________________________Footer_______________________ */
 
 .footer {
-  border-top-right-radius: 40px;
-  border-top-left-radius: 40px;
+
   background: rgb(164, 104, 206);
   background: linear-gradient(29deg, rgba(164, 104, 206, 1) 0%, rgba(164, 64, 184, 1) 0%, rgba(109, 65, 154, 1) 4%, rgba(30, 5, 61, 1) 22%);
 }
@@ -3121,6 +3120,13 @@ input[type=range]::-moz-focus-outer {
 .button-hover:hover {
 
   box-shadow: rgba(255, 255, 255, 0.4) 0px 7px 29px 0px;
+}
+
+/* _____________________________Final-Cta-Container____________________________ */
+
+.final-cta-container {
+  background: rgb(30, 5, 61);
+  background: linear-gradient(180deg, rgba(30, 5, 61, 1) 0%, rgba(30, 5, 61, 1) 45%, rgba(78, 46, 117, 1) 100%);
 }
 
 /* .trying-font {

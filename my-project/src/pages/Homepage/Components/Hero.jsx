@@ -15,7 +15,7 @@ const Hero = () => {
               Leading Platform for Collaborations 🤝
             </h3>
             <h1
-              className="c4nhw c1ig3 c7bak hero-heading font-bolder tracking-wider font-Faculty text-[#cb8ff9] lg:text-[4vw] text-[7vw] lg:text-left text-center"
+              className="c4nhw c1ig3 c7bak hero-heading tracking-wide font-Montserrat text-[#cb8ff9] lg:text-[3.7vw] text-[7vw] lg:text-left text-center"
               data-aos="fade-up"
               data-aos-delay="100"
             >
