@@ -17,6 +17,7 @@ import Benefits from "./Components/Benefits";
 import FinalCta from "./Components/FinalCta";
 import FAQ from "./Components/FAQ";
 import Worrying from "./Components/Worrying";
+import ScrollScaleComponent from "./Components/Testing";
 
 const Homepage = () => {
   const aboutlink = useRef(null);
@@ -35,7 +36,8 @@ const Homepage = () => {
 
       <MarqueeDemo />
 
-      {/* <Worrying /> */}
+      <ScrollScaleComponent />
+      <Worrying />
 
       <About aboutlink={aboutlink} />
 

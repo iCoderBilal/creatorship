@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ctaFinal from "../../../assets/creator-img-about.png";
+import ctaFinal from "../../../assets/testing.png";
+import cta1 from "../../../assets/cta-1.jpg";
+import cta2 from "../../../assets/cta-2.jpg";
+import cta3 from "../../../assets/cta-3.jpg";
+import cta4 from "../../../assets/cta-4.jpg";
 
 const FinalCta = () => {
   return (
@@ -27,7 +31,26 @@ const FinalCta = () => {
               </a>
             </div>
           </div>
-          <img src={ctaFinal} alt="Final Cta Image" className="opacity-[0.7]" />
+
+          <div className="bottom-images flex justify-center md:gap-[40px] gap-[20px] pt-[30px] pb-[20px] md:pt-[60px] md:pb-[40px]">
+            <img
+              src={cta1}
+              className="w-[38%] md:w-[200px] rounded-full p-1 border-2 border-[#B46EFF] hidden lg:block"
+            />
+            <img
+              src={cta2}
+              className="w-[38%] md:w-[200px] rounded-full p-1 border-2 border-[#B46EFF]"
+            />
+            <img
+              src={cta3}
+              className="w-[38%] md:w-[200px] rounded-full p-1 border-2 border-[#B46EFF]"
+            />
+            <img
+              src={cta4}
+              className="w-[38%] md:w-[200px] rounded-full p-1 border-2 border-[#B46EFF] hidden md:block"
+            />
+          </div>
+          {/* <img src={ctaFinal} alt="Final Cta Image" className="opacity-[0.7]" /> */}
         </div>
       </div>
     </div>
