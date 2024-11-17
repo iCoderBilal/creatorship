@@ -1,3 +1,4 @@
+import React, { useRef, useLayoutEffect } from "react";
 import { cn } from "../../../lib/utils.js";
 import Marquee from "../../../Components/Marquee.Jsx";
 import Star from "../../../assets/review-star.png";
@@ -8,16 +9,18 @@ import socialLogo from "../../../assets/social.png";
 import systemLogo from "../../../assets/system.png";
 import factureLogo from "../../../assets/facture.png";
 import nothingLogo from "../../../assets/nothing.png";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const MarqueeDemo = () => {
   return (
     <>
-      <h2
-        data-aos="fade-up"
-        className="px-[10px] text-center text-[9vw] leading-[9.5vw] md:text-[3.5vw] md:leading-[4vw] font-Montserrat font-bold pb-8 md:pb-16 md:pt-16"
-      >
+      <h2 className="px-[10px] text-center text-[9vw] leading-[9.5vw] md:text-[3.5vw] md:leading-[4vw] font-Montserrat font-bold pb-8 md:pb-16 md:pt-16">
         Trusted by <span className="text-[#62398D]">Multiple Businesses </span>
       </h2>
+
       <div className="bg-white relative flex min-h-[100px] w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background py-16 pt-0 md:py-16 md:pt-0">
         <Marquee pauseOnHover className="[--duration:10s]">
           <div className="flex items-center">
