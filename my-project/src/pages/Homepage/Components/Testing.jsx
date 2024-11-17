@@ -1,126 +1,80 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import React, { useRef, useLayoutEffect } from "react";
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ScrollScaleComponent() {
-  const orangeWrapperRef = useRef(null);
-  const orangeRef = useRef(null);
-  const lineRef = useRef(null);
+  const componentRef = useRef(null);
+  const pathRef = useRef(null);
 
-  useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".orangeWrapper",
-        scrub: true,
-        pin: true,
-        start: "50% 50%",
-        end: "+=200%",
-      },
-    });
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const path = pathRef.current;
+      if (!path) return;
 
-    tl.from(".orange", {
-      scale: 0.5,
-      ease: "none",
-    });
+      const length = path.getTotalLength();
 
-    tl.from(
-      lineRef.current,
-      {
-        scaleX: 0,
-        ease: "none",
-        transformOrigin: "left top",
-      },
-      0
-    );
+      gsap.set(path, {
+        strokeDasharray: length,
+        strokeDashoffset: length,
+        opacity: 1,
+      });
 
-    return () => {
-      tl.kill();
-    };
+      gsap.to(path, {
+        strokeDashoffset: 0,
+        opacity: 1,
+        duration: 10,
+        ease: "power1",
+        scrollTrigger: {
+          trigger: componentRef.current,
+          start: "center center",
+          end: "bottom center",
+          scrub: 1,
+          onUpdate: (self) => {
+            const progress = self.progress;
+            gsap.set(path, {
+              strokeDashoffset: length - length * progress,
+            });
+          },
+        },
+      });
+    }, componentRef);
+
+    return () => ctx.revert();
   }, []);
 
   return (
-    <div className="scroll-container">
-      <style jsx>{`
-        .scroll-container {
-          min-height: 100vh;
-          overflow-y: auto;
-          overflow-x: hidden;
-        }
-        .panel {
-          height: 100vh;
-          width: 100vw;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.5em;
-          font-weight: 600;
-          color: white;
-        }
-        .blue {
-          background-color: #3883f7;
-        }
-        .red {
-          background-color: #f73838;
-        }
-        .orange {
-          background-color: #f7a338;
-        }
-        .purple {
-          background-color: #8f38f7;
-        }
-        .gray {
-          background-color: #383838;
-        }
-        .line {
-          width: 100%;
-          height: 2px;
-          background-color: white;
-          display: block;
-          margin-bottom: 10px;
-        }
-        header {
-          position: fixed;
-          top: 0;
-          left: 0;
-          padding: 10px;
-        }
-      `}</style>
-      <div className="description panel blue">
-        <h2>scroll down</h2>
-      </div>
-
-      <section className="panel red">
-        <h2>more</h2>
-      </section>
-
-      <div className="panel orangeWrapper" ref={orangeWrapperRef}>
-        <section className="panel orange" ref={orangeRef}>
-          <h2>
-            <span className="line line-2" ref={lineRef}></span>
-            This panel grows in size
-          </h2>
-        </section>
-      </div>
-
-      <section className="panel purple"></section>
-
-      <section className="panel gray">DONE!</section>
-
-      <header>
-        <a href="https://greensock.com/scrolltrigger">
-          <img
-            className="greensock-icon"
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-trigger-logo-light.svg"
-            width="200"
-            height="64"
-            alt="GreenSock ScrollTrigger Logo"
+    <div
+      ref={componentRef}
+      className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-8"
+    >
+      <h1 className="text-3xl font-bold mb-8 text-center">
+        SVG Line Drawing Animation on Scroll
+      </h1>
+      <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg p-8">
+        <svg
+          className="w-full h-auto"
+          viewBox="0 0 500 300"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path
+            ref={pathRef}
+            d="M50,250 Q125,100 250,250 T450,250"
+            fill="none"
+            stroke="#3B82F6"
+            strokeWidth="8"
+            strokeLinecap="round"
           />
-        </a>
-      </header>
+        </svg>
+        <p className="mt-8 text-lg text-gray-700">
+          Scroll down to see the line being drawn. This animation uses GSAP and
+          ScrollTrigger to create a smooth drawing effect as you scroll through
+          the page.
+        </p>
+      </div>
     </div>
   );
 }
