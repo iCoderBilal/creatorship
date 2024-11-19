@@ -1,3 +1,5 @@
+import React from "react";
+import AnimatedBeamDemo from "./AnimatedBeamDemo";
 import { useEffect, useState, useRef } from "react"; // Import React hooks and useRef
 import { useInView } from "react-intersection-observer"; // Import useInView from react-intersection-observer to detect when the component is in the viewport
 
@@ -48,6 +50,7 @@ export default function ParentCompany() {
     <div>
       <div className="parent-company-container max-w-7xl mx-auto px-4 pt-16 pb-12">
         {/* The main container that holds the content */}
+        <AnimatedBeamDemo />
 
         <div className="parent-card w-full bg-[#f8f8f8] rounded-lg mx-auto md:px-12 md:py-12 p-2 py-8">
           {/* The card that holds the text and stats */}

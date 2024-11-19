@@ -31,9 +31,7 @@ const Homepage = () => {
       <Hero />
 
       <MarqueeDemo />
-
       <Worrying />
-
       <About aboutlink={aboutlink} />
 
       <Vision />
