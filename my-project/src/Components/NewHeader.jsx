@@ -129,13 +129,29 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-            <div className="w-full flex sm:w-max lg:min-w-max lg:items-center">
-              <a href="https://calendly.com/creatorships/" target="_blank">
-                <button className="  font-Montserrat font-semibold relative inline-flex h-10 w-full items-center justify-center rounded-md bg-white px-6 text-gray-950 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50">
-                  <div className="absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#8678f9] opacity-75 blur" />
-                  Book a Meeting
-                </button>
-              </a>
+            <div className="flex gap-[10px]">
+              <div className="lg:w-full flex sm:min-w-max lg:min-w-max lg:items-center">
+                <a
+                  href="https://mvp-creatorships.vercel.app/login"
+                  target="_blank"
+                >
+                  <button className="  font-Montserrat font-semibold relative inline-flex h-10 w-full items-center justify-center rounded-md bg-white px-6 text-gray-950 transition-colors hover:mb-[1px]  duration-300 ease-in-out outline-none">
+                    <div className="absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#8678f9] opacity-75 blur" />
+                    Sign In
+                  </button>
+                </a>
+              </div>
+              <div className="lg:w-full flex sm:min-w-max lg:min-w-max lg:items-center">
+                <a
+                  href="https://mvp-creatorships.vercel.app/register"
+                  target="_blank"
+                >
+                  <button className="  font-Montserrat font-semibold relative inline-flex h-10 w-full items-center justify-center rounded-md bg-white px-6 text-gray-950 transition-colors hover:mb-[1px]  duration-300 ease-in-out outline-none">
+                    <div className="absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#8678f9] opacity-75 blur" />
+                    Sign Up
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
           <div className="flex items-center justify-end relative z-60 lg:hidden">
